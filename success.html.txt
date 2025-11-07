@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Payment Successful - CyberSnack Hub</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="page-body">
+  <main class="container success-main">
+    <div class="success-anim">
+      <div class="success-tick">✓</div>
+      <h2>Transaction Successful</h2>
+      <p id="orderInfo">Order ID: --</p>
+      <p>Thank you for ordering from CyberSnack Hub.</p>
+      <a class="btn" href="track.html">Track Your Order</a>
+      <a class="btn secondary" href="menu.html">Back to Menu</a>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

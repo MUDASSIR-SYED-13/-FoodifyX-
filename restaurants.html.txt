@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>CyberSnack Hub - Restaurants</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="page-body">
+  <nav class="nav">
+    <div class="brand">⚡ CyberSnack Hub</div>
+    <div class="nav-links">
+      <a href="menu.html">Menu</a>
+      <a href="restaurants.html" class="active">Restaurants</a>
+      <a href="offers.html">Offers</a>
+      <a href="cart.html">Cart (<span id="cartCountRest">0</span>)</a>
+    </div>
+  </nav>
+
+  <header class="section-header"><h2>Popular Restaurants</h2><p>Tap a restaurant to view popular items</p></header>
+
+  <main class="container restaurants">
+    <!-- Restaurant card template: name, logo, popular items -->
+    <div class="restaurant-card">
+      <div class="rest-header">
+        <img src="https://logos-world.net/wp-content/uploads/2020/04/McDonalds-Logo-700x394.png" alt="McDonald's" />
+        <h3>McDonald’s</h3>
+      </div>
+      <div class="rest-grid">
+        <div class="card small"><img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?q=80&w=800&auto=format&fit=crop" alt="McVegBurger"><h4>Veg Burger</h4><p>₹120</p><button onclick="addToCart('McDonald’s - Veg Burger',120)">Add</button></div>
+        <div class="card small"><img src="https://images.unsplash.com/photo-1563590669-9f5b7f6d8a19?q=80&w=800&auto=format&fit=crop" alt="McFries"><h4>French Fries</h4><p>₹90</p><button onclick="addToCart('McDonald’s - Fries',90)">Add</button></div>
+        <div class="card small"><img src="https://images.unsplash.com/photo-1548095115-45697e9c9a32?q=80&w=800&auto=format&fit=crop" alt="McNuggets"><h4>Chicken Nuggets</h4><p>₹160</p><button onclick="addToCart('McDonald’s - Chicken Nuggets',160)">Add</button></div>
+      </div>
+    </div>
+
+    <div class="restaurant-card">
+      <div class="rest-header"><img src="https://1000logos.net/wp-content/uploads/2016/10/KFC-Logo.png" alt="KFC"/><h3>KFC</h3></div>
+      <div class="rest-grid">
+        <div class="card small"><img src="https://images.unsplash.com/photo-1608756937565-6f865f4e0c7b?q=80&w=800&auto=format&fit=crop" alt="KFC Bucket"><h4>Bucket (Hot & Crispy)</h4><p>₹450</p><button onclick="addToCart('KFC - Bucket',450)">Add</button></div>
+        <div class="card small"><img src="https://images.unsplash.com/photo-1604909053436-1fc6f2b0a3d3?q=80&w=800&auto=format&fit=crop" alt="KFC Burger"><h4>Chicken Burger</h4><p>₹170</p><button onclick="addToCart('KFC - Chicken Burger',170)">Add</button></div>
+      </div>
+    </div>
+
+    <div class="restaurant-card">
+      <div class="rest-header"><img src="https://logos-world.net/wp-content/uploads/2020/04/Subway-Logo.png" alt="Subway"/><h3>Subway</h3></div>
+      <div class="rest-grid">
+        <div class="card small"><img src="https://images.unsplash.com/photo-1598514982671-1a7d43f79a5a?q=80&w=800&auto=format&fit=crop" alt="Subway Sandwich"><h4>Veg Sandwich</h4><p>₹150</p><button onclick="addToCart('Subway - Veg Sandwich',150)">Add</button></div>
+        <div class="card small"><img src="https://images.unsplash.com/photo-1598514982671-1a7d43f79a5a?q=80&w=800&auto=format&fit=crop" alt="Subway Chicken"><h4>Chicken Sandwich</h4><p>₹200</p><button onclick="addToCart('Subway - Chicken Sandwich',200)">Add</button></div>
+      </div>
+    </div>
+
+    <div class="restaurant-card">
+      <div class="rest-header"><img src="https://1000logos.net/wp-content/uploads/2016/10/Dominoes-Logo.png" alt="Domino's"/><h3>Domino’s Pizza</h3></div>
+      <div class="rest-grid">
+        <div class="card small"><img src="https://images.unsplash.com/photo-1601924577879-4b8a92a5aab9?q=80&w=800&auto=format&fit=crop" alt="Domino Margherita"><h4>Margherita</h4><p>₹250</p><button onclick="addToCart('Domino’s - Margherita',250)">Add</button></div>
+        <div class="card small"><img src="https://images.unsplash.com/photo-1548365328-8b6fb1fa7ad6?q=80&w=800&auto=format&fit=crop" alt="Domino Pepperoni"><h4>Pepperoni</h4><p>₹330</p><button onclick="addToCart('Domino’s - Pepperoni',330)">Add</button></div>
+      </div>
+    </div>
+
+    <!-- Pizza Hut -->
+    <div class="restaurant-card">
+      <div class="rest-header"><img src="https://1000logos.net/wp-content/uploads/2017/05/Pizza-Hut-Logo.png" alt="Pizza Hut"/><h3>Pizza Hut</h3></div>
+      <div class="rest-grid">
+        <div class="card small"><img src="https://images.unsplash.com/photo-1607438213433-5a2b9ad8e1ae?q=80&w=800&auto=format&fit=crop" alt="PizzaHut Veg"><h4>Veg Supreme</h4><p>₹300</p><button onclick="addToCart('Pizza Hut - Veg Supreme',300)">Add</button></div>
+        <div class="card small"><img src="https://images.unsplash.com/photo-1548365328-8b6fb1fa7ad6?q=80&w=800&auto=format&fit=crop" alt="PizzaHut Chicken"><h4>BBQ Chicken</h4><p>₹360</p><button onclick="addToCart('Pizza Hut - BBQ Chicken',360)">Add</button></div>
+      </div>
+    </div>
+
+    <!-- Starbucks -->
+    <div class="restaurant-card">
+      <div class="rest-header"><img src="https://1000logos.net/wp-content/uploads/2017/06/Starbucks-Logo.png" alt="Starbucks"/><h3>Starbucks</h3></div>
+      <div class="rest-grid">
+        <div class="card small"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800&auto=format&fit=crop" alt="Starbucks Latte"><h4>Latte</h4><p>₹200</p><button onclick="addToCart('Starbucks - Latte',200)">Add</button></div>
+        <div class="card small"><img src="https://images.unsplash.com/photo-1524593869383-6f6c8f6a604b?q=80&w=800&auto=format&fit=crop" alt="Frappuccino"><h4>Frappuccino</h4><p>₹240</p><button onclick="addToCart('Starbucks - Frappuccino',240)">Add</button></div>
+      </div>
+    </div>
+
+    <!-- Burger King -->
+    <div class="restaurant-card">
+      <div class="rest-header"><img src="https://1000logos.net/wp-content/uploads/2018/03/BurgerKing-Logo.png" alt="Burger King"/><h3>Burger King</h3></div>
+      <div class="rest-grid">
+        <div class="card small"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=800&auto=format&fit=crop" alt="BK Whopper"><h4>Whopper</h4><p>₹260</p><button onclick="addToCart('Burger King - Whopper',260)">Add</button></div>
+        <div class="card small"><img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?q=80&w=800&auto=format&fit=crop" alt="BK Fries"><h4>Fries</h4><p>₹100</p><button onclick="addToCart('Burger King - Fries',100)">Add</button></div>
+      </div>
+    </div>
+
+    <!-- Taco Bell -->
+    <div class="restaurant-card">
+      <div class="rest-header"><img src="https://1000logos.net/wp-content/uploads/2017/06/Taco-Bell-Logo.png" alt="Taco Bell"/><h3>Taco Bell</h3></div>
+      <div class="rest-grid">
+        <div class="card small"><img src="https://images.unsplash.com/photo-1544829096-2a7a6e8b3f4a?q=80&w=800&auto=format&fit=crop" alt="Taco"><h4>Tacos</h4><p>₹140</p><button onclick="addToCart('Taco Bell - Tacos',140)">Add</button></div>
+        <div class="card small"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=800&auto=format&fit=crop" alt="Burrito"><h4>Burrito</h4><p>₹220</p><button onclick="addToCart('Taco Bell - Burrito',220)">Add</button></div>
+      </div>
+    </div>
+
+    <!-- Dunkin' Donuts, Costa Coffee, Nando's, Five Guys, Chipotle, Panda Express, Hard Rock -->
+    <div class="restaurant-card">
+      <div class="rest-header"><img src="https://1000logos.net/wp-content/uploads/2017/05/Dunkin-Donuts-Logo.png" alt="Dunkin Donuts"/><h3>Dunkin’ Donuts</h3></div>
+      <div class="rest-grid">
+        <div class="card small"><img src="https://images.unsplash.com/photo-1600699103272-1ee4c8b1d1e6?q=80&w=800&auto=format&fit=crop" alt="Donut"><h4>Donuts</h4><p>₹60</p><button onclick="addToCart('Dunkin - Donut',60)">Add</button></div>
+      </div>
+    </div>
+
+    <div class="restaurant-card">
+      <div class="rest-header"><img src="https://1000logos.net/wp-content/uploads/2017/03/Costa-Coffee-Logo.png" alt="Costa"/><h3>Costa Coffee</h3></div>
+      <div class="rest-grid">
+        <div class="card small"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800&auto=format&fit=crop" alt="Costa Latte"><h4>Latte</h4><p>₹180</p><button onclick="addToCart('Costa - Latte',180)">Add</button></div>
+      </div>
+    </div>
+
+    <div class="restaurant-card">
+      <div class="rest-header"><img src="https://1000logos.net/wp-content/uploads/2018/04/Nandos-Logo.png" alt="Nando's"/><h3>Nando’s</h3></div>
+      <div class="rest-grid">
+        <div class="card small"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="Peri Peri Chicken"><h4>Peri-Peri Chicken</h4><p>₹420</p><button onclick="addToCart('Nando’s - Peri-Peri Chicken',420)">Add</button></div>
+      </div>
+    </div>
+
+    <div class="restaurant-card">
+      <div class="rest-header"><img src="https://1000logos.net/wp-content/uploads/2018/03/Five-Guys-Logo.png" alt="Five Guys"/><h3>Five Guys</h3></div>
+      <div class="rest-grid">
+        <div class="card small"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=800&auto=format&fit=crop" alt="Five Guys Burger"><h4>Five Guys Burger</h4><p>₹320</p><button onclick="addToCart('Five Guys - Burger',320)">Add</button></div>
+      </div>
+    </div>
+
+    <div class="restaurant-card">
+      <div class="rest-header"><img src="https://1000logos.net/wp-content/uploads/2018/04/Chipotle-Logo.png" alt="Chipotle"/><h3>Chipotle</h3></div>
+      <div class="rest-grid">
+        <div class="card small"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=800&auto=format&fit=crop" alt="Burrito Chipotle"><h4>Burrito</h4><p>₹280</p><button onclick="addToCart('Chipotle - Burrito',280)">Add</button></div>
+      </div>
+    </div>
+
+    <div class="restaurant-card">
+      <div class="rest-header"><img src="https://1000logos.net/wp-content/uploads/2018/03/Panda-Express-Logo.png" alt="Panda Express"/><h3>Panda Express</h3></div>
+      <div class="rest-grid">
+        <div class="card small"><img src="https://images.unsplash.com/photo-1603133872878-684f9f2e28b4?q=80&w=800&auto=format&fit=crop" alt="Orange Chicken"><h4>Orange Chicken</h4><p>₹300</p><button onclick="addToCart('Panda Express - Orange Chicken',300)">Add</button></div>
+      </div>
+    </div>
+
+    <div class="restaurant-card">
+      <div class="rest-header"><img src="https://1000logos.net/wp-content/uploads/2017/05/Hard-Rock-Cafe-Logo.png" alt="Hard Rock"/><h3>Hard Rock Café</h3></div>
+      <div class="rest-grid">
+        <div class="card small"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=800&auto=format&fit=crop" alt="HardRock Burger"><h4>Signature Burger</h4><p>₹380</p><button onclick="addToCart('Hard Rock - Signature Burger',380)">Add</button></div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer"><p>© 2025 CyberSnack Hub</p></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

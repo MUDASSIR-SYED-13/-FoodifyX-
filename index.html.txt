@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CyberSnack Hub - Welcome</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-body">
+  <nav class="nav">
+    <div class="brand">⚡ CyberSnack Hub</div>
+    <div class="nav-links">
+      <a href="menu.html">Menu</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="offers.html">Offers</a>
+      <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+    </div>
+  </nav>
+
+  <main class="hero">
+    <div class="hero-left">
+      <h1>CyberSnack Hub</h1>
+      <p>Where <strong>Technology</strong> meets <strong>Taste</strong>. Order fast, pay safe.</p>
+      <form id="loginForm" class="login-form">
+        <input id="username" placeholder="Username" required />
+        <input id="password" type="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+      <p class="small">Demo login — enter any username & password</p>
+      <div class="quick-links">
+        <a class="btn" href="menu.html">Open Menu</a>
+        <a class="btn secondary" href="restaurants.html">View Restaurants</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="https://images.unsplash.com/photo-1541542684-22c0a7d9d3f9?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&s=4d5e8c8d9e5a0a6f" alt="CyberSnack Hub" />
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 CyberSnack Hub — Smart Food Ordering</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

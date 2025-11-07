@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>CyberSnack Hub - Menu</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="page-body">
+  <nav class="nav">
+    <div class="brand">⚡ CyberSnack Hub</div>
+    <div class="nav-links">
+      <a href="menu.html" class="active">Menu</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="offers.html">Offers</a>
+      <a href="cart.html">Cart (<span id="cartCountMenu">0</span>)</a>
+    </div>
+  </nav>
+
+  <header class="section-header">
+    <h2>Our Menu</h2>
+    <p>Explore — Add to Cart — Enjoy</p>
+  </header>
+
+  <main class="container">
+    <!-- Category: Snacks & Fast Food -->
+    <section class="category" id="snacks">
+      <h3>🍔 Snacks & Fast Food</h3>
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=800&auto=format&fit=crop" alt="Veg Burger">
+          <h4>Veg Burger</h4><p class="price">₹120</p>
+          <button onclick="addToCart('Veg Burger',120)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1606755962773-3f6f3d293c07?q=80&w=800&auto=format&fit=crop" alt="Chicken Burger">
+          <h4>Chicken Burger</h4><p class="price">₹150</p>
+          <button onclick="addToCart('Chicken Burger',150)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?q=80&w=800&auto=format&fit=crop" alt="French Fries">
+          <h4>French Fries</h4><p class="price">₹100</p>
+          <button onclick="addToCart('French Fries',100)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1551024709-8f23befc6cf7?q=80&w=800&auto=format&fit=crop" alt="Cheese Sandwich">
+          <h4>Cheese Sandwich</h4><p class="price">₹110</p>
+          <button onclick="addToCart('Cheese Sandwich',110)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1604908177522-04083c2fe5b2?q=80&w=800&auto=format&fit=crop" alt="Grilled Chicken Sandwich">
+          <h4>Grilled Chicken Sandwich</h4><p class="price">₹150</p>
+          <button onclick="addToCart('Grilled Chicken Sandwich',150)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1603052875784-29a7a5e6c7e7?q=80&w=800&auto=format&fit=crop" alt="Veg Wrap">
+          <h4>Veg Wrap</h4><p class="price">₹120</p>
+          <button onclick="addToCart('Veg Wrap',120)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1572441710534-680c2ce98466?q=80&w=800&auto=format&fit=crop" alt="Paneer Roll">
+          <h4>Paneer Roll</h4><p class="price">₹130</p>
+          <button onclick="addToCart('Paneer Roll',130)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1604908553387-763ab24d9f8f?q=80&w=800&auto=format&fit=crop" alt="Chicken Shawarma">
+          <h4>Chicken Shawarma</h4><p class="price">₹180</p>
+          <button onclick="addToCart('Chicken Shawarma',180)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1585238341966-4b29f15b2f44?q=80&w=800&auto=format&fit=crop" alt="Hot Dog">
+          <h4>Hot Dog</h4><p class="price">₹110</p>
+          <button onclick="addToCart('Hot Dog',110)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1604908177723-9f8a6b5f7b27?q=80&w=800&auto=format&fit=crop" alt="Nachos">
+          <h4>Nachos with Salsa</h4><p class="price">₹140</p>
+          <button onclick="addToCart('Nachos with Salsa',140)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1604909053436-1fc6f2b0a3d3?q=80&w=800&auto=format&fit=crop" alt="Garlic Bread">
+          <h4>Garlic Bread</h4><p class="price">₹90</p>
+          <button onclick="addToCart('Garlic Bread',90)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1585238341966-4b29f15b2f44?q=80&w=800&auto=format&fit=crop" alt="Spring Rolls">
+          <h4>Spring Rolls</h4><p class="price">₹120</p>
+          <button onclick="addToCart('Spring Rolls',120)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1594385941310-cf7cf3c6f6f1?q=80&w=800&auto=format&fit=crop" alt="Momos">
+          <h4>Momos (Veg/Chicken)</h4><p class="price">₹120</p>
+          <button onclick="addToCart('Momos (Veg/Chicken)',120)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1583324113626-70df0f4deaab?q=80&w=800&auto=format&fit=crop" alt="Samosa">
+          <h4>Samosa</h4><p class="price">₹40</p>
+          <button onclick="addToCart('Samosa',40)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="Aloo Tikki">
+          <h4>Aloo Tikki</h4><p class="price">₹50</p>
+          <button onclick="addToCart('Aloo Tikki',50)">Add</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category: Pizza & Pasta -->
+    <section class="category" id="pizza">
+      <h3>🍕 Pizza & Pasta</h3>
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1601924577879-4b8a92a5aab9?q=80&w=800&auto=format&fit=crop" alt="Margherita Pizza">
+          <h4>Margherita Pizza</h4><p class="price">₹250</p>
+          <button onclick="addToCart('Margherita Pizza',250)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1606755962773-3f6f3d293c07?q=80&w=800&auto=format&fit=crop" alt="Farmhouse Pizza">
+          <h4>Farmhouse Pizza</h4><p class="price">₹300</p>
+          <button onclick="addToCart('Farmhouse Pizza',300)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1548365328-8b6fb1fa7ad6?q=80&w=800&auto=format&fit=crop" alt="BBQ Chicken Pizza">
+          <h4>BBQ Chicken Pizza</h4><p class="price">₹350</p>
+          <button onclick="addToCart('BBQ Chicken Pizza',350)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1571091718767-18f8b9280b0b?q=80&w=800&auto=format&fit=crop" alt="Pepperoni Pizza">
+          <h4>Pepperoni Pizza</h4><p class="price">₹330</p>
+          <button onclick="addToCart('Pepperoni Pizza',330)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1607438213433-5a2b9ad8e1ae?q=80&w=800&auto=format&fit=crop" alt="Veggie Supreme Pizza">
+          <h4>Veggie Supreme Pizza</h4><p class="price">₹320</p>
+          <button onclick="addToCart('Veggie Supreme Pizza',320)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1604908177522-04083c2fe5b2?q=80&w=800&auto=format&fit=crop" alt="White Sauce Pasta">
+          <h4>White Sauce Pasta</h4><p class="price">₹220</p>
+          <button onclick="addToCart('White Sauce Pasta',220)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1603133872878-684f9f2e28b4?q=80&w=800&auto=format&fit=crop" alt="Red Sauce Pasta">
+          <h4>Red Sauce Pasta</h4><p class="price">₹200</p>
+          <button onclick="addToCart('Red Sauce Pasta',200)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1601924577879-4b8a92a5aab9?q=80&w=800&auto=format&fit=crop" alt="Alfredo Chicken Pasta">
+          <h4>Alfredo Chicken Pasta</h4><p class="price">₹320</p>
+          <button onclick="addToCart('Alfredo Chicken Pasta',320)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=800&auto=format&fit=crop" alt="Mac and Cheese">
+          <h4>Mac and Cheese</h4><p class="price">₹200</p>
+          <button onclick="addToCart('Mac and Cheese',200)">Add</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1604908553387-763ab24d9f8f?q=80&w=800&auto=format&fit=crop" alt="Lasagna">
+          <h4>Lasagna</h4><p class="price">₹320</p>
+          <button onclick="addToCart('Lasagna',320)">Add</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category: Main Course (Indian) -->
+    <section class="category" id="main">
+      <h3>🍛 Main Course (Indian)</h3>
+      <div class="grid">
+        <div class="card"><img src="https://images.unsplash.com/photo-1608039829576-7f6e65f26d3b?q=80&w=800&auto=format&fit=crop" alt="Butter Chicken"><h4>Butter Chicken</h4><p class="price">₹240</p><button onclick="addToCart('Butter Chicken',240)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1617196036514-7d34c5d84a4b?q=80&w=800&auto=format&fit=crop" alt="Paneer Butter Masala"><h4>Paneer Butter Masala</h4><p class="price">₹210</p><button onclick="addToCart('Paneer Butter Masala',210)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1600557011653-7e35b6f0e6d1?q=80&w=800&auto=format&fit=crop" alt="Chicken Biryani"><h4>Chicken Biryani</h4><p class="price">₹220</p><button onclick="addToCart('Chicken Biryani',220)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1621349032906-2900a1f9d7e5?q=80&w=800&auto=format&fit=crop" alt="Veg Biryani"><h4>Veg Biryani</h4><p class="price">₹180</p><button onclick="addToCart('Veg Biryani',180)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1564758866813-3b31d7c0b6c7?q=80&w=800&auto=format&fit=crop" alt="Mutton Rogan Josh"><h4>Mutton Rogan Josh</h4><p class="price">₹360</p><button onclick="addToCart('Mutton Rogan Josh',360)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1604908553387-763ab24d9f8f?q=80&w=800&auto=format&fit=crop" alt="Dal Tadka"><h4>Dal Tadka</h4><p class="price">₹130</p><button onclick="addToCart('Dal Tadka',130)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?q=80&w=800&auto=format&fit=crop" alt="Rajma Chawal"><h4>Rajma Chawal</h4><p class="price">₹140</p><button onclick="addToCart('Rajma Chawal',140)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1606755962773-3f6f3d293c07?q=80&w=800&auto=format&fit=crop" alt="Chole Bhature"><h4>Chole Bhature</h4><p class="price">₹160</p><button onclick="addToCart('Chole Bhature',160)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1621349032906-2900a1f9d7e5?q=80&w=800&auto=format&fit=crop" alt="Pulao"><h4>Pulao</h4><p class="price">₹140</p><button onclick="addToCart('Pulao',140)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1598514982671-1a7d43f79a5a?q=80&w=800&auto=format&fit=crop" alt="Naan Roti Paratha"><h4>Naan / Roti / Paratha</h4><p class="price">₹30</p><button onclick="addToCart('Naan / Roti / Paratha',30)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop" alt="Fish Curry"><h4>Fish Curry</h4><p class="price">₹280</p><button onclick="addToCart('Fish Curry',280)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1604908177723-9f8a6b5f7b27?q=80&w=800&auto=format&fit=crop" alt="Palak Paneer"><h4>Palak Paneer</h4><p class="price">₹200</p><button onclick="addToCart('Palak Paneer',200)">Add</button></div>
+      </div>
+    </section>
+
+    <!-- Category: Soups & Starters -->
+    <section class="category" id="soups">
+      <h3>🍜 Soups & Starters</h3>
+      <div class="grid">
+        <div class="card"><img src="https://images.unsplash.com/photo-1542444459-db0e6b9a1d4b?q=80&w=800&auto=format&fit=crop" alt="Tomato Soup"><h4>Tomato Soup</h4><p class="price">₹90</p><button onclick="addToCart('Tomato Soup',90)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?q=80&w=800&auto=format&fit=crop" alt="Sweet Corn Soup"><h4>Sweet Corn Soup</h4><p class="price">₹100</p><button onclick="addToCart('Sweet Corn Soup',100)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1604908553387-763ab24d9f8f?q=80&w=800&auto=format&fit=crop" alt="Hot & Sour Soup"><h4>Hot & Sour Soup</h4><p class="price">₹110</p><button onclick="addToCart('Hot & Sour Soup',110)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1604909053436-1fc6f2b0a3d3?q=80&w=800&auto=format&fit=crop" alt="Manchow Soup"><h4>Manchow Soup</h4><p class="price">₹120</p><button onclick="addToCart('Manchow Soup',120)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1603133872878-684f9f2e28b4?q=80&w=800&auto=format&fit=crop" alt="Chicken Clear Soup"><h4>Chicken Clear Soup</h4><p class="price">₹130</p><button onclick="addToCart('Chicken Clear Soup',130)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?q=80&w=800&auto=format&fit=crop" alt="Crispy Corn"><h4>Crispy Corn</h4><p class="price">₹140</p><button onclick="addToCart('Crispy Corn',140)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1594759206031-5b7d1d6b2f1f?q=80&w=800&auto=format&fit=crop" alt="Chilli Paneer"><h4>Chilli Paneer</h4><p class="price">₹170</p><button onclick="addToCart('Chilli Paneer',170)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1604908177723-9f8a6b5f7b27?q=80&w=800&auto=format&fit=crop" alt="Chilli Chicken"><h4>Chilli Chicken</h4><p class="price">₹190</p><button onclick="addToCart('Chilli Chicken',190)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=800&auto=format&fit=crop" alt="Gobi Manchurian"><h4>Gobi Manchurian</h4><p class="price">₹150</p><button onclick="addToCart('Gobi Manchurian',150)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=800&auto=format&fit=crop" alt="Veg Cutlet"><h4>Veg Cutlet</h4><p class="price">₹80</p><button onclick="addToCart('Veg Cutlet',80)">Add</button></div>
+      </div>
+    </section>
+
+    <!-- Category: Continental & Asian -->
+    <section class="category" id="asian">
+      <h3>🍣 Continental & Asian</h3>
+      <div class="grid">
+        <div class="card"><img src="https://images.unsplash.com/photo-1604908553387-763ab24d9f8f?q=80&w=800&auto=format&fit=crop" alt="Fried Rice Veg"><h4>Fried Rice (Veg)</h4><p class="price">₹160</p><button onclick="addToCart('Fried Rice (Veg)',160)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1598514982671-1a7d43f79a5a?q=80&w=800&auto=format&fit=crop" alt="Fried Rice Chicken"><h4>Fried Rice (Chicken)</h4><p class="price">₹200</p><button onclick="addToCart('Fried Rice (Chicken)',200)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?q=80&w=800&auto=format&fit=crop" alt="Schezwan Noodles"><h4>Schezwan Noodles</h4><p class="price">₹170</p><button onclick="addToCart('Schezwan Noodles',170)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1604908553387-763ab24d9f8f?q=80&w=800&auto=format&fit=crop" alt="Hakka Noodles"><h4>Hakka Noodles</h4><p class="price">₹160</p><button onclick="addToCart('Hakka Noodles',160)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1553621042-f6e147245754?q=80&w=800&auto=format&fit=crop" alt="Chicken Dumplings"><h4>Chicken Dumplings</h4><p class="price">₹220</p><button onclick="addToCart('Chicken Dumplings',220)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1562158070-9f5f1b4f30a1?q=80&w=800&auto=format&fit=crop" alt="Sushi Roll"><h4>Sushi Roll</h4><p class="price">₹280</p><button onclick="addToCart('Sushi Roll',280)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=800&auto=format&fit=crop" alt="Thai Green Curry"><h4>Thai Green Curry</h4><p class="price">₹260</p><button onclick="addToCart('Thai Green Curry',260)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1604908177723-9f8a6b5f7b27?q=80&w=800&auto=format&fit=crop" alt="Stir-Fried Veggies"><h4>Stir-Fried Veggies</h4><p class="price">₹150</p><button onclick="addToCart('Stir-Fried Veggies',150)">Add</button></div>
+      </div>
+    </section>
+
+    <!-- Category: Desserts & Sweets -->
+    <section class="category" id="desserts">
+      <h3>🧁 Desserts & Sweets</h3>
+      <div class="grid">
+        <div class="card"><img src="https://images.unsplash.com/photo-1599785209707-28beed5f1dfd?q=80&w=800&auto=format&fit=crop" alt="Chocolate Brownie"><h4>Chocolate Brownie</h4><p class="price">₹120</p><button onclick="addToCart('Chocolate Brownie',120)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1599785209707-28beed5f1dfd?q=80&w=800&auto=format&fit=crop" alt="Gulab Jamun"><h4>Gulab Jamun</h4><p class="price">₹80</p><button onclick="addToCart('Gulab Jamun',80)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=800&auto=format&fit=crop" alt="Rasmalai"><h4>Rasmalai</h4><p class="price">₹110</p><button onclick="addToCart('Rasmalai',110)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1606813909355-7d4d2f98420a?q=80&w=800&auto=format&fit=crop" alt="Ice Cream Sundae"><h4>Ice Cream Sundae</h4><p class="price">₹140</p><button onclick="addToCart('Ice Cream Sundae',140)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop" alt="Waffles"><h4>Waffles with Syrup</h4><p class="price">₹150</p><button onclick="addToCart('Waffles with Syrup',150)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1447078806655-40579c2520d6?q=80&w=800&auto=format&fit=crop" alt="Pancakes"><h4>Pancakes</h4><p class="price">₹140</p><button onclick="addToCart('Pancakes',140)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1542826438-3d8f6b8b6d1a?q=80&w=800&auto=format&fit=crop" alt="Cheesecake"><h4>Cheesecake</h4><p class="price">₹180</p><button onclick="addToCart('Cheesecake',180)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1587814216150-3f6a3f8b1e34?q=80&w=800&auto=format&fit=crop" alt="Cupcakes"><h4>Cupcakes</h4><p class="price">₹100</p><button onclick="addToCart('Cupcakes',100)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1607082345580-3d9a2c3b5f44?q=80&w=800&auto=format&fit=crop" alt="Donuts"><h4>Donuts</h4><p class="price">₹80</p><button onclick="addToCart('Donuts',80)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?q=80&w=800&auto=format&fit=crop" alt="Apple Pie"><h4>Apple Pie</h4><p class="price">₹150</p><button onclick="addToCart('Apple Pie',150)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=800&auto=format&fit=crop" alt="Tiramisu"><h4>Tiramisu</h4><p class="price">₹220</p><button onclick="addToCart('Tiramisu',220)">Add</button></div>
+      </div>
+    </section>
+
+    <!-- Category: Beverages -->
+    <section class="category" id="beverages">
+      <h3>☕ Beverages</h3>
+      <div class="grid">
+        <div class="card"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800&auto=format&fit=crop" alt="Cold Coffee"><h4>Cold Coffee</h4><p class="price">₹110</p><button onclick="addToCart('Cold Coffee',110)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1551024709-8f23befc6cf7?q=80&w=800&auto=format&fit=crop" alt="Hot Coffee"><h4>Hot Coffee</h4><p class="price">₹90</p><button onclick="addToCart('Hot Coffee',90)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=800&auto=format&fit=crop" alt="Cappuccino"><h4>Cappuccino</h4><p class="price">₹120</p><button onclick="addToCart('Cappuccino',120)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=800&auto=format&fit=crop" alt="Latte"><h4>Latte</h4><p class="price">₹130</p><button onclick="addToCart('Latte',130)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df?q=80&w=800&auto=format&fit=crop" alt="Espresso"><h4>Espresso</h4><p class="price">₹100</p><button onclick="addToCart('Espresso',100)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1587731614901-c8a8a5d1a0d1?q=80&w=800&auto=format&fit=crop" alt="Masala Chai"><h4>Masala Chai</h4><p class="price">₹60</p><button onclick="addToCart('Masala Chai',60)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1509402171681-3ea8d070b8c7?q=80&w=800&auto=format&fit=crop" alt="Iced Tea"><h4>Iced Tea (Lemon / Peach)</h4><p class="price">₹90</p><button onclick="addToCart('Iced Tea (Lemon/Peach)',90)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1524593869383-6f6c8f6a604b?q=80&w=800&auto=format&fit=crop" alt="Fresh Lime Soda"><h4>Fresh Lime Soda</h4><p class="price">₹70</p><button onclick="addToCart('Fresh Lime Soda',70)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1542444459-db0e6b9a1d4b?q=80&w=800&auto=format&fit=crop" alt="Smoothie"><h4>Smoothies</h4><p class="price">₹160</p><button onclick="addToCart('Smoothies',160)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1547592180-0f4f8b2f6b25?q=80&w=800&auto=format&fit=crop" alt="Milkshake"><h4>Milkshakes (Chocolate/Strawberry/Oreo)</h4><p class="price">₹150</p><button onclick="addToCart('Milkshake',150)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="Mojito"><h4>Mojito (Mint/Lemon/Blueberry)</h4><p class="price">₹140</p><button onclick="addToCart('Mojito',140)">Add</button></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=800&auto=format&fit=crop" alt="Soft Drink"><h4>Soft Drinks</h4><p class="price">₹70</p><button onclick="addToCart('Soft Drink',70)">Add</button></div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-side">
+    <h3>Your Cart</h3>
+    <ul id="cartList"></ul>
+    <div class="cart-summary">
+      <p id="cartTotal">Total: ₹0</p>
+      <a class="btn big" href="cart.html">Open Cart</a>
+    </div>
+  </aside>
+
+  <footer class="footer">
+    <p>© 2025 CyberSnack Hub</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

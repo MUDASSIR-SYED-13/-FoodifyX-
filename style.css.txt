@@ -1,0 +1,113 @@
+/* ----------------------------------------------------------
+   CyberSnack Hub - style.css
+   Dark-futuristic neon theme, responsive layout
+   ---------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root{
+  --bg:#0b0c10;
+  --card:#121417;
+  --neon:#66fcf1;
+  --accent:#45a29e;
+  --muted:#9aa3a8;
+}
+
+*{box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;margin:0;background:linear-gradient(180deg,#070809 0%,#0b0c10 100%);color:#fff;-webkit-font-smoothing:antialiased;}
+
+/* NAV */
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:rgba(16,18,20,0.6);backdrop-filter:blur(6px);border-bottom:1px solid rgba(102,252,241,0.06)}
+.brand{font-weight:600;color:var(--neon)}
+.nav-links a{color:#cfeff0;margin-left:18px;text-decoration:none}
+.nav-links a.active{color:var(--neon)}
+
+/* HERO / INDEX */
+.hero{display:flex;gap:20px;padding:40px;align-items:center;justify-content:center}
+.hero-left{max-width:600px}
+.hero-left h1{font-size:44px;margin:0;color:var(--neon)}
+.hero-left p{color:var(--muted);margin:10px 0 18px}
+.login-form{display:flex;flex-direction:column;gap:10px;max-width:360px}
+.login-form input{padding:10px;border-radius:8px;border:none;background:#0f1315;color:#fff;outline:none}
+.login-form button{padding:10px;background:var(--accent);border:none;border-radius:8px;color:#fff;cursor:pointer}
+.small{color:var(--muted);font-size:13px;margin-top:8px}
+.hero-right img{max-width:420px;border-radius:12px;box-shadow:0 8px 30px rgba(102,252,241,0.06)}
+
+/* SECTION HEADER */
+.section-header{text-align:center;padding:20px}
+.section-header h2{margin:0;color:var(--neon)}
+
+/* CONTAINER & GRID */
+.container{display:block;padding:20px;max-width:1200px;margin:0 auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:12px;border-radius:10px;border:1px solid rgba(102,252,241,0.04);text-align:center;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+.card img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+.card h4{margin:10px 0 6px}
+.card .price{color:var(--muted);margin:0 0 8px}
+.card button{padding:8px 12px;background:var(--accent);border:none;border-radius:8px;color:#fff;cursor:pointer}
+
+/* CART SIDE */
+.cart-side{position:fixed;right:20px;top:120px;width:260px;background:var(--card);padding:16px;border-radius:12px;border:1px solid rgba(102,252,241,0.04);box-shadow:0 8px 30px rgba(0,0,0,0.6)}
+.cart-side h3{margin:0 0 8px;color:var(--neon)}
+.cart-side ul{list-style:none;padding:0;margin:0;max-height:300px;overflow:auto}
+.cart-side li{padding:6px 0;border-bottom:1px dashed rgba(255,255,255,0.03);font-size:14px}
+.cart-side .cart-summary{margin-top:10px;text-align:center}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;background:var(--neon);color:#000;text-decoration:none;font-weight:600}
+.btn.secondary{background:transparent;border:1px solid rgba(102,252,241,0.1);color:#cfeff0}
+.btn.big{display:block;padding:12px 16px;margin-top:10px}
+
+/* RESTAURANTS */
+.restaurants{padding:20px;display:grid;grid-template-columns:1fr;gap:18px}
+.restaurant-card{background:var(--card);padding:14px;border-radius:10px;border:1px solid rgba(102,252,241,0.03)}
+.rest-header{display:flex;align-items:center;gap:12px}
+.rest-header img{width:80px;height:40px;object-fit:contain}
+.rest-grid{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.card.small{width:140px;padding:8px}
+
+/* OFFERS */
+.offers-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.offer-card{background:linear-gradient(180deg,rgba(66,245,235,0.03),rgba(66,245,235,0.01));padding:16px;border-radius:10px;border:1px solid rgba(102,252,241,0.04)}
+.offer-card h4{margin:0;color:var(--neon)}
+
+/* CART PAGE */
+.cart-container{display:flex;gap:20px}
+.cart-list{flex:2}
+.cart-summary{flex:1;background:var(--card);padding:16px;border-radius:10px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:10px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.03)}
+.cart-actions input{padding:8px;border-radius:8px;border:none;background:#0f1315;color:#fff;width:60%}
+.cart-actions button{padding:8px 10px;border-radius:8px;border:none;background:var(--accent);color:#fff;margin-left:8px}
+.cart-actions .big{display:inline-block;padding:10px 16px;background:var(--neon);color:#000;border-radius:8px;text-decoration:none}
+
+/* PAYMENT */
+.payment-container{text-align:center;padding:40px}
+.payment-options button{display:block;margin:10px auto;padding:12px 18px;border-radius:10px;background:var(--accent);border:none;color:#fff;cursor:pointer}
+
+/* LOADER */
+.loader{margin:20px auto;border:8px solid rgba(0,0,0,0.2);border-top:8px solid var(--neon);border-radius:50%;width:60px;height:60px;animation:spin 1s linear infinite}
+.hidden{display:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* SUCCESS */
+.success-main{display:flex;align-items:center;justify-content:center;height:70vh}
+.success-anim{background:var(--card);padding:30px;border-radius:12px;text-align:center;border:1px solid rgba(102,252,241,0.03)}
+.success-tick{width:80px;height:80px;border-radius:50%;background:var(--neon);color:#000;font-size:42px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;box-shadow:0 8px 30px rgba(102,252,241,0.15);transform:scale(0);animation:pop 0.6s forwards}
+@keyframes pop{to{transform:scale(1)}} 
+
+/* TRACKER */
+.track-container{padding:20px}
+.tracker{display:flex;gap:12px;justify-content:space-between;align-items:center}
+.stage{flex:1;background:rgba(255,255,255,0.02);padding:14px;border-radius:10px;text-align:center;position:relative}
+.stage .dot{width:18px;height:18px;border-radius:50%;background:#333;margin:6px auto}
+.stage.active{background:linear-gradient(90deg,rgba(102,252,241,0.08),rgba(102,252,241,0.02));border:1px solid rgba(102,252,241,0.1)}
+.stage.active .dot{background:var(--neon)}
+
+/* FOOTER */
+.footer{padding:18px;text-align:center;color:var(--muted);margin-top:30px}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .cart-side{display:none}
+  .hero{flex-direction:column;padding:20px}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
+  .cart-container{flex-direction:column}
+}

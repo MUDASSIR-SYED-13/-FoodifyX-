@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Track Order - CyberSnack Hub</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="page-body">
+  <nav class="nav"><div class="brand">⚡ CyberSnack Hub</div><div class="nav-links"><a href="menu.html">Menu</a><a href="restaurants.html">Restaurants</a><a href="cart.html">Cart</a></div></nav>
+
+  <header class="section-header"><h2>Track Order</h2><p>Live order status</p></header>
+
+  <main class="container track-container">
+    <div class="tracker">
+      <div class="stage" id="stage1"><div class="dot"></div><p>Order Placed</p></div>
+      <div class="stage" id="stage2"><div class="dot"></div><p>Preparing</p></div>
+      <div class="stage" id="stage3"><div class="dot"></div><p>Out for Delivery</p></div>
+      <div class="stage" id="stage4"><div class="dot"></div><p>Delivered</p></div>
+    </div>
+    <p id="trackMsg" class="small">Order ID: --</p>
+  </main>
+
+  <footer class="footer"><p>© 2025 CyberSnack Hub</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

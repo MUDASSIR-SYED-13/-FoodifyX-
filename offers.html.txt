@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>CyberSnack Hub - Offers</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="page-body">
+  <nav class="nav"><div class="brand">⚡ CyberSnack Hub</div><div class="nav-links"><a href="menu.html">Menu</a><a href="restaurants.html">Restaurants</a><a href="offers.html" class="active">Offers</a><a href="cart.html">Cart (<span id="cartCountOffers">0</span>)</a></div></nav>
+
+  <header class="section-header"><h2>🔥 Current Offers</h2><p>Apply offers to your cart</p></header>
+
+  <main class="container">
+    <div class="offers-grid">
+      <div class="offer-card">
+        <h4>50% Off Burgers</h4>
+        <p>Use code <strong>BURGER50</strong> — 50% off up to ₹150 on burger items</p>
+        <button onclick="applyOffer('BURGER50')">Apply</button>
+      </div>
+
+      <div class="offer-card">
+        <h4>Buy 1 Get 1 Pizza</h4>
+        <p>Code <strong>PIZZA2</strong> — BOGO on Margherita or Veggie Pizza</p>
+        <button onclick="applyOffer('PIZZA2')">Apply</button>
+      </div>
+
+      <div class="offer-card">
+        <h4>Flat ₹100 Off</h4>
+        <p>Use <strong>COFFEE100</strong> — ₹100 off on orders above ₹499</p>
+        <button onclick="applyOffer('COFFEE100')">Apply</button>
+      </div>
+    </div>
+
+    <div class="apply-manual">
+      <input id="manualOffer" placeholder="Enter offer code" />
+      <button onclick="applyOffer(document.getElementById('manualOffer').value)">Apply</button>
+      <p id="offerMsg"></p>
+    </div>
+
+  </main>
+
+  <footer class="footer"><p>© 2025 CyberSnack Hub</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

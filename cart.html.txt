@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>CyberSnack Hub - Cart</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="page-body">
+  <nav class="nav"><div class="brand">⚡ CyberSnack Hub</div><div class="nav-links"><a href="menu.html">Menu</a><a href="restaurants.html">Restaurants</a><a href="offers.html">Offers</a><a href="cart.html" class="active">Cart</a></div></nav>
+
+  <header class="section-header"><h2>Your Cart</h2><p>Review items, change qty or remove</p></header>
+
+  <main class="container cart-container">
+    <div class="cart-list">
+      <table id="cartTable">
+        <thead><tr><th>Item</th><th>Price</th><th>Qty</th><th>Amount</th><th></th></tr></thead>
+        <tbody id="cartBody"></tbody>
+      </table>
+    </div>
+
+    <div class="cart-summary">
+      <h3>Summary</h3>
+      <p id="subTotal">Subtotal: ₹0</p>
+      <p id="offerApplied">Offer: -₹0</p>
+      <p id="grandTotal">Total: ₹0</p>
+      <div class="cart-actions">
+        <input id="applyCode" placeholder="Enter offer code" />
+        <button onclick="applyOffer(document.getElementById('applyCode').value)">Apply Offer</button>
+        <a class="btn big" href="payment.html" onclick="return goToPayment()">Proceed to Payment</a>
+      </div>
+      <p id="cartMsg" class="small"></p>
+    </div>
+  </main>
+
+  <footer class="footer"><p>© 2025 CyberSnack Hub</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>CyberSnack Hub - Payment</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="page-body">
+  <nav class="nav"><div class="brand">⚡ CyberSnack Hub</div><div class="nav-links"><a href="menu.html">Menu</a><a href="restaurants.html">Restaurants</a><a href="offers.html">Offers</a><a href="cart.html">Cart</a></div></nav>
+
+  <header class="section-header"><h2>Payment</h2><p>Select a payment method</p></header>
+
+  <main class="container payment-container">
+    <div class="payment-options">
+      <button onclick="simulatePayment('Google Pay')">Google Pay</button>
+      <button onclick="simulatePayment('Credit Card')">Credit / Debit Card</button>
+      <button onclick="simulatePayment('Wallet')">Wallet</button>
+      <button onclick="simulatePayment('Cash')">Cash on Delivery</button>
+    </div>
+
+    <div id="paymentLoader" class="loader hidden"></div>
+    <p id="paymentMsg" class="small"></p>
+  </main>
+
+  <footer class="footer"><p>© 2025 CyberSnack Hub</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
